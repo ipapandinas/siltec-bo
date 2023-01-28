@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ambiances",
+  "info": {
+    "singularName": "ambiance",
+    "pluralName": "ambiances",
+    "displayName": "Ambiance",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titre": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "vignette": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "rank": {
+      "type": "integer",
+      "default": 0
+    },
+    "couleur": {
+      "type": "string",
+      "required": false
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "slug": {
+      "type": "uid"
+    }
+  }
+}

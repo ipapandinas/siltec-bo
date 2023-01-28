@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "typologies",
+  "info": {
+    "singularName": "typology",
+    "pluralName": "typologies",
+    "displayName": "Typology",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "rank": {
+      "required": false,
+      "default": 0,
+      "type": "integer"
+    },
+    "ambiances": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::ambiance.ambiance"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    }
+  }
+}

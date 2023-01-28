@@ -1,0 +1,81 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "Product",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "medias": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "document": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos",
+        "audios"
+      ]
+    },
+    "ambiance": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::ambiance.ambiance"
+    },
+    "typology": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::typology.typology"
+    },
+    "collection": {
+      "type": "string",
+      "required": false,
+      "unique": false
+    },
+    "rank": {
+      "type": "integer",
+      "default": 0
+    },
+    "brand": {
+      "type": "string",
+      "required": false
+    },
+    "designer": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    }
+  }
+}
