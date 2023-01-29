@@ -29,10 +29,6 @@
       "type": "integer",
       "default": 0
     },
-    "couleur": {
-      "type": "string",
-      "required": false
-    },
     "description": {
       "type": "text"
     },
@@ -46,6 +42,11 @@
     },
     "slug": {
       "type": "uid"
+    },
+    "couleur": {
+      "type": "customField",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
+      "customField": "plugin::color-picker.color"
     }
   }
 }
