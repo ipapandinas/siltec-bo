@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * ambiance service
+ * collection service
  */
 
 const { createCoreService } = require('@strapi/strapi').factories;
 
-module.exports = createCoreService('api::ambiance.ambiance');
+module.exports = createCoreService('api::collection.collection');

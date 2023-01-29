@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * ambiance router
+ * collection router
  */
 
 const { createCoreRouter } = require('@strapi/strapi').factories;
 
-module.exports = createCoreRouter('api::ambiance.ambiance');
+module.exports = createCoreRouter('api::collection.collection');

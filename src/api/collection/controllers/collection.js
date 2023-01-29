@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * ambiance controller
+ * collection controller
  */
 
 const { createCoreController } = require('@strapi/strapi').factories;
 
-module.exports = createCoreController('api::ambiance.ambiance');
+module.exports = createCoreController('api::collection.collection');

@@ -30,11 +30,6 @@
       "default": 0,
       "type": "integer"
     },
-    "ambiances": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::ambiance.ambiance"
-    },
     "slug": {
       "type": "uid",
       "targetField": "title"

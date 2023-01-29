@@ -1,0 +1,31 @@
+{
+  "kind": "singleType",
+  "collectionName": "hub_des_realisations",
+  "info": {
+    "singularName": "hub-de-realisation",
+    "pluralName": "hub-des-realisations",
+    "displayName": "Hub des réalisations"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titre": {
+      "type": "string",
+      "default": "Réalisations",
+      "required": true
+    },
+    "sousTitre": {
+      "type": "text",
+      "required": true,
+      "default": "Résidentiel ou bureaux, intérieur ou extérieur, découvrez une sélection de nos réalisations en aménagement mobilier."
+    },
+    "couleur": {
+      "type": "customField",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
+      "required": true,
+      "customField": "plugin::color-picker.color"
+    }
+  }
+}

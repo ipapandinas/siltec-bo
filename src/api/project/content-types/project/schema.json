@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "ambiances",
+  "collectionName": "projects",
   "info": {
-    "singularName": "ambiance",
-    "pluralName": "ambiances",
-    "displayName": "Ambiance",
+    "singularName": "project",
+    "pluralName": "projects",
+    "displayName": "Réalisation",
     "description": ""
   },
   "options": {
@@ -25,28 +25,29 @@
         "images"
       ]
     },
-    "rank": {
-      "type": "integer",
-      "default": 0
-    },
     "description": {
-      "type": "text"
+      "type": "richtext"
     },
-    "image": {
+    "medias": {
       "type": "media",
-      "multiple": false,
+      "multiple": true,
       "required": false,
       "allowedTypes": [
         "images"
       ]
     },
-    "slug": {
-      "type": "uid"
-    },
     "couleur": {
       "type": "customField",
       "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
       "customField": "plugin::color-picker.color"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "titre"
+    },
+    "rank": {
+      "type": "integer",
+      "default": 0
     }
   }
 }

@@ -1,0 +1,44 @@
+{
+  "kind": "singleType",
+  "collectionName": "qui_sommes_nous_2",
+  "info": {
+    "singularName": "qui-sommes-nous",
+    "pluralName": "qui-sommes-nous-2",
+    "displayName": "Qui sommes-nous ?",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titre": {
+      "type": "string",
+      "required": true,
+      "default": "Qui sommes-nous ?"
+    },
+    "sousTitre": {
+      "type": "text",
+      "default": "Une équipe de spécialistes de l'aménagement d'espaces au service des architectes, des entreprises, des hôtels et des particuliers",
+      "required": true
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "trombinoscope": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "couleur": {
+      "type": "customField",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
+      "customField": "plugin::color-picker.color",
+      "required": true
+    }
+  }
+}

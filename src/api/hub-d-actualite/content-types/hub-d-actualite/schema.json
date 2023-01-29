@@ -1,0 +1,31 @@
+{
+  "kind": "singleType",
+  "collectionName": "hub_des_actualites",
+  "info": {
+    "singularName": "hub-d-actualite",
+    "pluralName": "hub-des-actualites",
+    "displayName": "Hub des actualités"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titre": {
+      "type": "string",
+      "default": "Actualités",
+      "required": true
+    },
+    "sousTitre": {
+      "type": "text",
+      "default": "Presse, salons, expositions, blogs de partenaires, ventes aux enchères… Notre regard sur les tendances.",
+      "required": true
+    },
+    "couleur": {
+      "type": "customField",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
+      "required": true,
+      "customField": "plugin::color-picker.color"
+    }
+  }
+}

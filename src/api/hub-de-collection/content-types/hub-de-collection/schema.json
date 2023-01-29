@@ -1,0 +1,32 @@
+{
+  "kind": "singleType",
+  "collectionName": "hub_des_collections",
+  "info": {
+    "singularName": "hub-de-collection",
+    "pluralName": "hub-des-collections",
+    "displayName": "Hub des collections",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titre": {
+      "type": "string",
+      "required": true,
+      "default": "COLLECTIONS"
+    },
+    "sousTitre": {
+      "type": "text",
+      "default": "Notre sélection de produits au sein d'une offre beaucoup plus vaste.",
+      "required": true
+    },
+    "couleur": {
+      "type": "customField",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
+      "customField": "plugin::color-picker.color",
+      "required": true
+    }
+  }
+}
