@@ -65,6 +65,11 @@
     },
     "slug": {
       "type": "uid"
+    },
+    "collection": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::collection.collection"
     }
   }
 }

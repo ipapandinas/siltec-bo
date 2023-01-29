@@ -33,10 +33,11 @@
     "slug": {
       "type": "uid"
     },
-    "collection": {
+    "collections": {
       "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::collection.collection"
+      "relation": "oneToMany",
+      "target": "api::collection.collection",
+      "mappedBy": "typology"
     }
   }
 }
