@@ -12,7 +12,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
+    "titre": {
       "type": "string",
       "required": true,
       "unique": true
@@ -31,8 +31,12 @@
       "type": "integer"
     },
     "slug": {
-      "type": "uid",
-      "targetField": "title"
+      "type": "uid"
+    },
+    "collection": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::collection.collection"
     }
   }
 }

@@ -12,7 +12,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
+    "titre": {
       "type": "string",
       "required": true,
       "unique": true
@@ -52,16 +52,11 @@
       "relation": "oneToOne",
       "target": "api::typology.typology"
     },
-    "collection": {
-      "type": "string",
-      "required": false,
-      "unique": false
-    },
     "rank": {
       "type": "integer",
       "default": 0
     },
-    "brand": {
+    "marque": {
       "type": "string",
       "required": false
     },
@@ -69,8 +64,7 @@
       "type": "string"
     },
     "slug": {
-      "type": "uid",
-      "targetField": "title"
+      "type": "uid"
     }
   }
 }
