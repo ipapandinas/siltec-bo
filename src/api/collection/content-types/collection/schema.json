@@ -48,9 +48,9 @@
     "description": {
       "type": "text"
     },
-    "typology": {
+    "typologies": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "manyToMany",
       "target": "api::typology.typology",
       "inversedBy": "collections"
     }

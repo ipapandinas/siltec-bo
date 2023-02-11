@@ -35,9 +35,9 @@
     },
     "collections": {
       "type": "relation",
-      "relation": "oneToMany",
+      "relation": "manyToMany",
       "target": "api::collection.collection",
-      "mappedBy": "typology"
+      "mappedBy": "typologies"
     }
   }
 }
