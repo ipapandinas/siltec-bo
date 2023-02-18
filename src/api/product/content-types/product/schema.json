@@ -64,7 +64,8 @@
       "type": "string"
     },
     "slug": {
-      "type": "uid"
+      "type": "uid",
+      "targetField": "titre"
     },
     "collection": {
       "type": "relation",
