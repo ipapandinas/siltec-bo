@@ -1,10 +1,10 @@
 {
   "kind": "singleType",
-  "collectionName": "carrousels",
+  "collectionName": "carroussels",
   "info": {
-    "singularName": "carrousel",
-    "pluralName": "carrousels",
-    "displayName": "Carrousel"
+    "singularName": "carroussel",
+    "pluralName": "carroussels",
+    "displayName": "Carroussel"
   },
   "options": {
     "draftAndPublish": false

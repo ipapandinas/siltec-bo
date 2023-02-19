@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * carrousel router
+ * carroussel router
  */
 
 const { createCoreRouter } = require('@strapi/strapi').factories;
 
-module.exports = createCoreRouter('api::carrousel.carrousel');
+module.exports = createCoreRouter('api::carroussel.carroussel');
