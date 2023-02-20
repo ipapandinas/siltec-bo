@@ -17,7 +17,7 @@
       "required": true,
       "unique": true
     },
-    "vignette": {
+    "image": {
       "type": "media",
       "multiple": false,
       "required": true,

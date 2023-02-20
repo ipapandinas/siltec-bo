@@ -4,7 +4,8 @@
   "info": {
     "singularName": "new",
     "pluralName": "news",
-    "displayName": "Actualité"
+    "displayName": "Actualité",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
@@ -18,20 +19,21 @@
     "corps": {
       "type": "richtext"
     },
-    "vignette": {
-      "allowedTypes": [
-        "images"
-      ],
+    "image": {
       "type": "media",
       "multiple": false,
-      "required": true
-    },
-    "medias": {
+      "required": true,
       "allowedTypes": [
         "images"
-      ],
+      ]
+    },
+    "medias": {
       "type": "media",
-      "multiple": true
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
     },
     "slug": {
       "type": "uid",

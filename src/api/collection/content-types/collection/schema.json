@@ -16,14 +16,6 @@
       "type": "string",
       "required": true
     },
-    "vignette": {
-      "type": "media",
-      "multiple": false,
-      "required": true,
-      "allowedTypes": [
-        "images"
-      ]
-    },
     "rank": {
       "type": "integer",
       "default": 0
