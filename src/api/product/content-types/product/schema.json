@@ -36,17 +36,6 @@
         "images"
       ]
     },
-    "document": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "files",
-        "images",
-        "videos",
-        "audios"
-      ]
-    },
     "typology": {
       "type": "relation",
       "relation": "oneToOne",
@@ -73,12 +62,12 @@
       "target": "api::collection.collection"
     },
     "picto": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": false,
-      "required": false
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
     }
   }
 }

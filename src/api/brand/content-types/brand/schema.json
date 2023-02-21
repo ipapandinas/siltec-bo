@@ -4,7 +4,8 @@
   "info": {
     "singularName": "brand",
     "pluralName": "brands",
-    "displayName": "Marque"
+    "displayName": "Marque",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
@@ -15,17 +16,18 @@
       "type": "string",
       "required": true
     },
-    "vedette": {
+    "premium": {
       "type": "boolean",
       "default": false,
       "required": false
     },
     "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     }
   }
 }
