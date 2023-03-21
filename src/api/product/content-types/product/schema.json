@@ -36,10 +36,11 @@
         "images"
       ]
     },
-    "typology": {
+    "typologies": {
       "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::typology.typology"
+      "relation": "oneToMany",
+      "target": "api::typology.typology",
+      "mappedBy": "produit"
     },
     "rank": {
       "type": "integer",
@@ -56,18 +57,11 @@
       "type": "uid",
       "targetField": "titre"
     },
-    "collection": {
+    "collections": {
       "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::collection.collection"
-    },
-    "picto": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images"
-      ]
+      "relation": "oneToMany",
+      "target": "api::collection.collection",
+      "mappedBy": "produit"
     }
   }
 }

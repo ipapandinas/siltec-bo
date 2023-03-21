@@ -45,6 +45,12 @@
       "relation": "manyToMany",
       "target": "api::typology.typology",
       "inversedBy": "collections"
+    },
+    "produit": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::product.product",
+      "inversedBy": "collections"
     }
   }
 }
