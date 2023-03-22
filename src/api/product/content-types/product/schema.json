@@ -38,9 +38,9 @@
     },
     "typologies": {
       "type": "relation",
-      "relation": "oneToMany",
+      "relation": "manyToMany",
       "target": "api::typology.typology",
-      "mappedBy": "produit"
+      "mappedBy": "produits"
     },
     "rank": {
       "type": "integer",
@@ -59,9 +59,9 @@
     },
     "collections": {
       "type": "relation",
-      "relation": "oneToMany",
+      "relation": "manyToMany",
       "target": "api::collection.collection",
-      "mappedBy": "produit"
+      "mappedBy": "produits"
     }
   }
 }
