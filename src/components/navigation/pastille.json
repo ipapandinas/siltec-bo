@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_navigation_pastilles",
+  "info": {
+    "displayName": "Pastille",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "picto": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "couleur": {
+      "type": "customField",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
+      "required": true,
+      "customField": "plugin::color-picker.color"
+    },
+    "titre": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "url": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

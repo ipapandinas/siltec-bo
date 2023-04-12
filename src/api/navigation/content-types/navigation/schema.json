@@ -1,0 +1,23 @@
+{
+  "kind": "singleType",
+  "collectionName": "navigations",
+  "info": {
+    "singularName": "navigation",
+    "pluralName": "navigations",
+    "displayName": "Navigation",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "pastille": {
+      "type": "component",
+      "repeatable": true,
+      "component": "navigation.pastille",
+      "required": true,
+      "max": 5
+    }
+  }
+}
